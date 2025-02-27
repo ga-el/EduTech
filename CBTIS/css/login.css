@@ -1,0 +1,133 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E8F5E9; /* Fondo verde claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Contenedor del formulario */
+.login-container {
+    background-color: #A5D6A7; /* Fondo verde claro */
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    opacity: 0; /* Oculto inicialmente */
+    transform: translateY(-50px); /* Posición inicial para animación */
+}
+
+/* Logo */
+.logo img {
+    width: 400px;
+    height: 150px;
+    margin-bottom:10px;
+    animation: bounce 2s infinite; /* Animación de rebote */
+} 
+
+/* Animación de rebote */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Título */
+.login-container h1 {
+    margin-bottom: 20px;
+    color: #2E7D32; /* Verde oscuro */
+    animation: fadeIn 1.5s ease-in-out; /* Animación de entrada */
+}
+
+/* Subtítulo para la segunda opción */
+.student-card-form h2 {
+    margin-top: 30px;
+    color: #2E7D32; /* Verde oscuro */
+    font-size: 18px;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Grupo de inputs */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Etiquetas */
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #4CAF50; /* Verde intermedio */
+    margin-bottom: 5px;
+}
+
+/* Campos de entrada */
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #FFFFFF; /* Blanco */
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #E8F5E9; /* Fondo verde claro */
+    color: #2E7D32; /* Texto verde oscuro */
+}
+
+/* Efecto hover en los inputs */
+.input-group input:focus {
+    outline: none;
+    border-color: #4CAF50; /* Verde intermedio */
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5); /* Resplandor verde */
+}
+
+/* Botón */
+.btn {
+    background-color: #2E7D32; /* Verde oscuro */
+    color: #FFFFFF; /* Texto blanco */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #4CAF50; /* Verde intermedio */
+    transform: scale(1.05); /* Efecto de zoom */
+}
+
+/* Enlace */
+.link-container {
+    margin-top: 20px;
+}
+
+.link {
+    color: #2E7D32; /* Verde oscuro */
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #4CAF50; /* Verde intermedio */
+    text-decoration: underline;
+} 

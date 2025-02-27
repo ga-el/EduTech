@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video</title>
+    <link rel="stylesheet" href="/css/rpv.css">
+</head>
+<body>
+
+  <div class="video-player-container">
+    <video id="video-player" controls>
+      <source src="video.mp4" type="video/mp4">
+ 
+    </video>
+    <div class="controls">
+      <button id="play-pause-btn" class="play-pause-btn">
+        <i class="fas fa-play"></i>
+      </button>
+      <div class="progress-bar-container">
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+      </div>
+      <button id="volume-btn" class="volume-btn">
+        <i class="fas fa-volume-up"></i>
+      </button>
+      <input type="range" id="volume-slider" class="volume-slider" min="0" max="1" step="0.01" value="1">
+    </div>
+  </div>
+
+  <script src="/js/rpv.js"></script>
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+
+
+
+
+</body>
+</html>

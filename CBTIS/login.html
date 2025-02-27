@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Login Animado</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <script src="/js/login.js"></script>
+</head>
+<body>
+
+    <div class="login-container">
+        <!-- Logo animado -->
+        <div class="logo">  
+            <img src="/fotos/Captura_de_pantalla_2025-02-18_212320-removebg-preview.png" alt="Logo">
+        </div>
+        <!-- Título -->
+        <h1>Iniciar Sesión</h1>
+        <!-- Formulario -->
+        <form action="login.php" method="POST">
+            <!-- Opción 1: Usuario y contraseña -->
+            <div class="input-group">
+                <label for="username">Usuario</label>
+                <input type="text" id="username" name="username" placeholder="Ingresa tu usuario" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+            </div>
+            <button type="submit" class="btn">Ingresar</button>
+        </form>
+
+        <div class="link-container">
+            <a href="tarjeta.html" class="link">INICIO CON MI TARJETA DE ESTUDIANTE</a>
+        </div>
+    </div>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

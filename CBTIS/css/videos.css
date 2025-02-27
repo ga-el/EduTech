@@ -1,0 +1,96 @@
+/* Archivo: styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F1F8E9; /* Fondo verde claro */
+    color: #333333; /* Texto oscuro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .form-container {
+    background-color: #FFFFFF; /* Fondo blanco */
+    padding: 25px 35px;
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 450px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #4CAF50; /* Verde principal */
+    margin-bottom: 20px;
+    font-size: 24px;
+    float: left;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #388E3C; /* Verde oscuro */
+  }
+  
+  input[type="text"],
+  textarea,
+  input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #F9FBE7; /* Fondo verde muy claro */
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50; /* Verde principal */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #388E3C; /* Verde oscuro */
+    transform: scale(1.05); /* Efecto de agrandamiento */
+  }
+  
+  button:active {
+    background-color: #2E7D32; /* Verde más oscuro */
+    transform: scale(1); /* Vuelve al tamaño original */
+  }
+  
+  input[type="file"] {
+    padding: 8px;
+    background-color: #FFFFFF; /* Fondo blanco */
+    border: 1px dashed #4CAF50; /* Borde verde */
+    cursor: pointer;
+  }
+  
+  input[type="file"]::file-selector-button {
+    background-color: #4CAF50; /* Botón verde */
+    color: #FFFFFF;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="file"]::file-selector-button:hover {
+    background-color: #388E3C; /* Verde oscuro */
+  }
